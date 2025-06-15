@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './EventDetail.css';
 
-// Імпорти картинок
 import musicEventImg from '../assets/music_event.jpg';
 import foodFestivalImg from '../assets/food_festival.jpg';
 import standupShowImg from '../assets/standup_show.jpg';
@@ -35,7 +34,6 @@ const EventDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const numericId = Number(id);
 
-  // Перевірка на існування події
   if (!eventDetails[numericId as keyof typeof eventDetails]) {
     return (
       <div className="event-detail not-found">
