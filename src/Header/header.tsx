@@ -24,7 +24,7 @@ const header = () => {
             <input type="text" placeholder="Choose a location" />
           </div>
           <button className="search-btn">
-            <img src={searchIcon} alt="Go" />
+            <img src={searchIcon} style={{ filter: 'invert(0%)' }} alt="Go" />
           </button>
         </div>
         <div className="header-right">
